@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Bible: Codable {
+    let results: [Result]
+}
+
+struct Result: Codable {
+    let reference: String
+    let content: String
+}

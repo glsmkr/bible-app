@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C479931322236D15008E6550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479931222236D15008E6550 /* AppDelegate.swift */; };
-		C479931522236D15008E6550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479931422236D15008E6550 /* ViewController.swift */; };
+		C479931522236D15008E6550 /* BibleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479931422236D15008E6550 /* BibleDetailViewController.swift */; };
 		C479931822236D15008E6550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C479931622236D15008E6550 /* Main.storyboard */; };
 		C479931A22236D16008E6550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C479931922236D16008E6550 /* Assets.xcassets */; };
 		C479931D22236D16008E6550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C479931B22236D16008E6550 /* LaunchScreen.storyboard */; };
+		C479932522243BB8008E6550 /* BibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479932422243BB8008E6550 /* BibleTableViewController.swift */; };
+		C4799328222445FB008E6550 /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4799327222445FB008E6550 /* Bible.swift */; };
+		C48601892229F3BA008319A9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48601882229F3BA008319A9 /* CardView.swift */; };
+		C4C9CC2F222705130099CD07 /* BibleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9CC2E222705130099CD07 /* BibleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C479930F22236D15008E6550 /* Bible!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C479931222236D15008E6550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C479931422236D15008E6550 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C479931422236D15008E6550 /* BibleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleDetailViewController.swift; sourceTree = "<group>"; };
 		C479931722236D15008E6550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C479931922236D16008E6550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C479931C22236D16008E6550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C479931E22236D16008E6550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C479932422243BB8008E6550 /* BibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleTableViewController.swift; sourceTree = "<group>"; };
+		C4799327222445FB008E6550 /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		C48601882229F3BA008319A9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C4C9CC2E222705130099CD07 /* BibleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				C479931222236D15008E6550 /* AppDelegate.swift */,
-				C479931422236D15008E6550 /* ViewController.swift */,
+				C48601872229E3B2008319A9 /* Networking Helper */,
+				C48601862229E383008319A9 /* Model */,
+				C479932622243BF5008E6550 /* View Controllers */,
 				C479931622236D15008E6550 /* Main.storyboard */,
 				C479931922236D16008E6550 /* Assets.xcassets */,
 				C479931B22236D16008E6550 /* LaunchScreen.storyboard */,
 				C479931E22236D16008E6550 /* Info.plist */,
 			);
 			path = "Bible!";
+			sourceTree = "<group>";
+		};
+		C479932622243BF5008E6550 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C479931422236D15008E6550 /* BibleDetailViewController.swift */,
+				C48601882229F3BA008319A9 /* CardView.swift */,
+				C479932422243BB8008E6550 /* BibleTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C48601862229E383008319A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4799327222445FB008E6550 /* Bible.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C48601872229E3B2008319A9 /* Networking Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C4C9CC2E222705130099CD07 /* BibleController.swift */,
+			);
+			path = "Networking Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C479931522236D15008E6550 /* ViewController.swift in Sources */,
+				C4799328222445FB008E6550 /* Bible.swift in Sources */,
+				C479931522236D15008E6550 /* BibleDetailViewController.swift in Sources */,
+				C4C9CC2F222705130099CD07 /* BibleController.swift in Sources */,
 				C479931322236D15008E6550 /* AppDelegate.swift in Sources */,
+				C48601892229F3BA008319A9 /* CardView.swift in Sources */,
+				C479932522243BB8008E6550 /* BibleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
