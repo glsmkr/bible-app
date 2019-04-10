@@ -20,8 +20,8 @@ class BibleController {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         
         let queryItem = URLQueryItem(name: "q", value: term)
-        
-        urlComponents?.queryItems = [queryItem]
+        let resultNumberQueryItem = URLQueryItem(name: "page-size", value: "100")
+        urlComponents?.queryItems = [queryItem, resultNumberQueryItem]
         
         guard let requestURL =  urlComponents?.url else {
             NSLog("Error constructing search URL for \(term)")
